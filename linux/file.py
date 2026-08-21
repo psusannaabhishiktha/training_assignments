@@ -50,5 +50,5 @@ if __name__ == "__main__":
     arr = [64, 34, 25, 12, 22, 11, 90]
     print("Original array:", arr)
     print("Sorted array:", merge_sort(arr))
-    print("Testing branch move from main")
-    print("testing merge conflict from main")
+    print("Testing branch conflict from feature branch")
+
