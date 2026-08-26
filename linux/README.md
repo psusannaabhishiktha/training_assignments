@@ -14,18 +14,14 @@
 1. Identify the python process --
 ps aux | grep python 
 
-
 2. Inspect the process --
 ps -p 1482 -f 
-
 
 3. Inspect what the python processor is doing --
 lsof -p 1482
 
-
 4. Stop the process --
 kill 1482
-
 
 5. Check whether it stopped --
 ps -p 1482
@@ -33,74 +29,75 @@ ps -p 1482
 
 # Q3- The application is running, but users cannot access port 8080. How would you debug it?​
 
-Check if the application is running
+1. Check if the application is running --
 ps -ef | grep app
 
 
-Check if port 8080 is listening
+2. Check if port 8080 is listening --
 ss -tulnp | grep 8080
 
 
-Check application logs
+3. Check application logs --
 tail -50 app.log
 
 
-Verify the configured port
+4. Verify the configured port --
 cat application.properties
 
 
-Check if the firewall is blocking 8080
+5. Check if the firewall is blocking 8080 --
 firewall-cmd --list-ports
 
 
 # Q4- A service keeps restarting. What would you inspect?​
-Check service status
+
+1. Check service status --
 systemct1 status payment-api
 
 
-Check service logs command
+2. Check service logs command --
 journalctl -u payment-api -n 50
 
 
-Check recent errors 
+3. Check recent errors --
 journalctl -u payment-api -p err -n 20
 
  
-Check restart count
+4. Check restart count --
 systemctl status payment-api
 
 
 # Q5- Disk usage suddenly reaches 95%. How would you find what is consuming space without deleting random files?​
 
-Check which directory is using the most space
+1. Check which directory is using the most space --
 du -sh /*
 
 
-Drill down into the large directory
+2. get down into the large directory --
 du -sh /var/*
 
 
-Find large files
+3. Find large files --
 find / -type f -size +500M
 
 
-Check log files
+4. Check log files --
 du -sh /var/log/*
 
 
 # Q6- Memory usage keeps increasing until the process is killed. What would you monitor?​ 
 
-Check memory usage
+1. Check memory usage --
 free -h
 
 
-Monitor the process memory
+2. Monitor the process memory --
 top
 
 
-Monitor a specific process
+3. Monitor a specific process --
 ps -p 3482 -o pid,%mem,rss,cmd
 
 
-Check system logs
+4. Check system logs --
 tail -50 app.log
