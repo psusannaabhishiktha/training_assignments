@@ -2,7 +2,7 @@
 You accidentally made changes on `main` instead of a feature branch. What steps would you take to move the work safely?​
 
 ## Solution:
-# if no commit done on main
+### if no commit done on main
 1. Check the current status
 2. Create a new feature branch
 3. Switch to the feature branch
@@ -11,8 +11,8 @@ You accidentally made changes on `main` instead of a feature branch. What steps 
 # if commit done on main
 reset main to the previous commit
 
-## Proof of work:
-![alt text](screenshots\GIT_Q1.png)
+### Proof of work:
+![alt text](screenshots/GIT_Q1.png)
 
 # Question-2
 You pulled the latest code and got a merge conflict. How would you inspect and resolve it?​
