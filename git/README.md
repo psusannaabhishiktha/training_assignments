@@ -12,7 +12,7 @@ You accidentally made changes on `main` instead of a feature branch. What steps 
 reset main to the previous commit
 
 ### Proof of work:
-![alt text](GIT_Q1.png)
+git/GIT_Q1.png
 
 # Question-2
 You pulled the latest code and got a merge conflict. How would you inspect and resolve it?​
