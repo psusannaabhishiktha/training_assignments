@@ -11,23 +11,23 @@
 
 # Q2- A Python process is consuming high CPU. How would you identify the process, inspect it, and decide whether it is safe to stop?​
 
-Identify the python process 
+1. Identify the python process --
 ps aux | grep python 
 
 
-Inspect the process
+2. Inspect the process --
 ps -p 1482 -f 
 
 
-Inspect what the python processor is doing 
+3. Inspect what the python processor is doing --
 lsof -p 1482
 
 
-Stop the process
+4. Stop the process --
 kill 1482
 
 
-Check whether it stopped
+5. Check whether it stopped --
 ps -p 1482
 
 
