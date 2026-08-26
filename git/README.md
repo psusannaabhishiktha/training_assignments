@@ -8,7 +8,7 @@ You accidentally made changes on `main` instead of a feature branch. What steps 
 3. Switch to the feature branch
 4. Stage the changes and commit it
 6. Verify the branch
-# if commit done on main
+### if commit done on main
 reset main to the previous commit
 
 ### Proof of work:
@@ -26,7 +26,7 @@ You pulled the latest code and got a merge conflict. How would you inspect and r
 6. Commit the resolution using git commit
 
 ## proof of work
-![alt text](screenshots\GIT_Q2.png)
+![alt text](screenshots/GIT_Q2.png)
 
 # Question-3:
 Your last commit contains a secret in a config file. What would you do if it has not been pushed yet? What changes if it has already been pushed?​
@@ -38,7 +38,7 @@ Your last commit contains a secret in a config file. What would you do if it has
 4. Stage the corrected file
 
 ## proof of work
-![alt text](screenshots\GIT_Q3.png)
+![alt text](screenshots/GIT_Q3.png)
 
 # Question-4
 A pull request has unrelated commits mixed together. How would you clean it before asking for review?​
@@ -51,7 +51,7 @@ A pull request has unrelated commits mixed together. How would you clean it befo
 5. Update the branch
 
 ## proof of work
-![alt text](screenshots\GIT_Q4.png)
+![alt text](screenshots/GIT_Q4.png)
 
 # Question-5
  test started failing sometime last week. How would you use Git to identify which commit introduced the issue?​
@@ -65,8 +65,8 @@ A pull request has unrelated commits mixed together. How would you clean it befo
  6. Exit bisect mode
 
  ## proof of work
- ![alt text](screenshots\GIT_Q5-1.png)
- ![alt text](screenshots\GIT_Q5-2.png)
+ ![alt text](screenshots/GIT_Q5-1.png)
+ ![alt text](screenshots/GIT_Q5-2.png)
 
  # Question-6
  Your branch is behind remote and has local changes. How would you update safely without losing work?​
@@ -80,4 +80,4 @@ A pull request has unrelated commits mixed together. How would you clean it befo
  6. Verify the status of the branch
 
  ## proof of work
- ![alt text](screenshots\GIT_Q6.png)
+ ![alt text](screenshots/GIT_Q6.png)
