@@ -49,4 +49,4 @@ if __name__ == "__main__":
     arr = [38, 27, 43, 3, 9, 82, 10]
     sorted_arr = merge_sort(arr)
     print("Sorted array:", sorted_arr)
-    print("uncommented code")
+    print("uncommitted code")
